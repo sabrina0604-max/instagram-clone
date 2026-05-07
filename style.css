@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: #fafafa;
+    color: #333;
+
+}
+.tela-completa{
+    display: flex;
+}
+
+.foto {
+    flex: 1 1 0;
+    width: 60%;
+}
+.foto img{
+    width: 100%;
+}
+
+.login{
+    flex: 1 1 0;
+    width: 50%;
+    height: 500px;
+}
+
+.formulario{
+    background-color: #fff;
+    border:1px solid #dbdbdb;
+    width: 600px;
+    margin-top: 30px;
+}
+
+.formulario h1{
+    margin: 30px auto 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+input{
+    margin: 10px auto ;
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    background-color: #b2dffc;
+    color: #fff;
+    border-radius: 20px;
+    margin: 15px auto;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]:hover{
+    background-color: #3caffc
+}
+
+.esqueceu-senha{
+    text-align: center;
+    margin: 10px auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.esqueceu-senha:hover{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fafafa;
+}
+
+.esqueceu-senha a{
+    text-decoration: none;
+    color: #333;
+}
+
+.separador{
+    width: 100%;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 25px auto 15px;
+  color: #bbb;
+  font-size: 14px;
+  text-transform: uppercase;
+  max-width: 500px;
+}
+
+.linha::before,
+.linha::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.outros-links{
+    text-align: center;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outros-links a{
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+}
+
+.outros-links a:hover{
+    background-color: #fafafa;
+}
+
+.outros-links img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.criar-conta{
+    display: flex;
+    justify-content: center;
+}
+
+.criar-conta a{
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 300px;
+    border: 1px solid #3caffc;
+    border-radius: 20px;
+}
+
+.criar-conta a:hover{
+    background-color: #fafafa;
+}
+
+.meta img{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+footer{
+display: flex;
+flex-direction: column;
+border-top: 1px solid #ccc;
+text-align: left;
+margin: auto;
+justify-content: center;
+align-items: center;
+}
+
+footer .links-rodape{
+    display: flex;
+    list-style: none;
+}
+
+.links-rodape li{
+    margin-right: 10px;
+}
+
+.links-rodape a,
+.copyright{
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+/*celular*/
+
+@media(max-width:450px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html, 
+    body,
+    .formulario{
+    width: 100%;
+    min-height: 100vh;
+    }
+
+    body{
+        background-color: #fff;
+    }
+
+    .foto{
+        display: none;
+    }
+
+    .login,
+    .formulario,
+    .criar-conta{
+      border: none;
+    }
+
+    .links-rodape{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top:200px;
+    }
+}
+    
+
+
